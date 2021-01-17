@@ -868,7 +868,7 @@ body {
 	position: absolute;
 	right: 0;
 	min-height: 100%;
-	background: #eaeaea;
+	/*background: #eaeaea;*/
 	left: 300px;
 	width: auto
 }
@@ -883,7 +883,8 @@ body {
 }
 
 .left-col {
-	background-image: url(IMG_20210116_093154.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+	url(IMG_20210116_093154.jpg);
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -913,16 +914,16 @@ body {
 }
 
 .left-col #header a {
-	color: #999
+	color: #696969
 }
 
 .left-col #header a:hover {
-	color: #5628
+	color: #b0a0aa
 }
 
 .left-col #header .header-subtitle {
 	text-align: center;
-	color: #5628;
+	color: #000000;
 	font-size: 14px;
 	line-height: 25px;
 	overflow: hidden;
