@@ -1597,7 +1597,8 @@ pre .css~* .id,pre .id {
 	margin: 0 30px;
 	padding-right: 60px;
 	border-bottom: 1px solid #eee;
-	background: #fff
+	/*background: #fff*/
+	background: rgba(255,255,255,.5);
 }
 
 .archives-wrap:first-child {
