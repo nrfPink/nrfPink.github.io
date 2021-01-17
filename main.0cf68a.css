@@ -1,78 +1,5 @@
-blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul {
-	margin: 0;
-	padding: 0
-}
 
-fieldset,img {
-	border: 0
-}
-
-:focus {
-	outline: 0
-}
-
-address,cite,code,ctoolion,dfn,em,optgroup,strong,th,var {
-	font-style: normal;
-	font-weight: 400
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-size: 100%;
-	font-weight: 400
-}
-
-abbr,acronym {
-	border: 0;
-	font-variant: normal
-}
-
-button,input,optgroup,option,select,textarea {
-	font-family: inherit;
-	font-size: inherit;
-	font-style: inherit;
-	font-weight: inherit
-}
-
-code,kbd,samp,tt {
-	font-size: 100%
-}
-
-body {
-	line-height: 1.5
-}
-
-ol,ul {
-	list-style: none
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0
-}
-
-ctoolion,th {
-	text-align: left
-}
-
-sub,sup {
-	font-size: 100%;
-	vertical-align: baseline
-}
-
-:link,:visited,ins {
-	text-decoration: none
-}
-
-blockquote,q {
-	quotes: none
-}
-
-blockquote:after,blockquote:before,q:after,q:before {
-	content: '';
-	content: none
-}
-
-.clearfix:before,body.clearfix:after {
+body.clearfix:after,.clearfix:before {
 	content: "";
 	display: table
 }
@@ -412,13 +339,12 @@ audio:not([controls]) {
 
 progress {
 	vertical-align: baseline
-}
-[hidden],template {
+}[hidden],template {
 	display: none
 }
 
 a {
-	background: 0 0;
+	background: transparent;
 	text-decoration: none;
 	color: #08c
 }
@@ -503,8 +429,7 @@ button,select {
 button,html input[type=button],input[type=reset],input[type=submit] {
 	-webkit-appearance: button;
 	cursor: pointer
-}
-[disabled] {
+}[disabled] {
 	cursor: default
 }
 
@@ -632,9 +557,8 @@ i {
 }
 
 @font-face {
-	font-family:iconfont;src:url(fonts/iconfont.b322fa.eot);src:url(fonts/iconfont.b322fa.eot#iefix) format("embedded-opentype"),url(fonts/iconfont.8c627f.woff) format("woff"),url(fonts/iconfont.16acc2.ttf) format("truetype"),url(fonts/iconfont.45d7ee.svg#iconfont) format("svg")
-}
-[class*=" icon-"],[class^=icon-] {
+	font-family:iconfont;src:url(./fonts/iconfont.b322fa.eot);src:url(./fonts/iconfont.b322fa.eot#iefix) format("embedded-opentype"),url(./fonts/iconfont.8c627f.woff) format("woff"),url(./fonts/iconfont.16acc2.ttf) format("truetype"),url(./fonts/iconfont.45d7ee.svg#iconfont) format("svg")
+}[class*=" icon-"],[class^=icon-] {
 	font-family: iconfont!important;
 	speak: none;
 	font-size: 16px;
@@ -868,13 +792,13 @@ body {
 	position: absolute;
 	right: 0;
 	min-height: 100%;
-	/*background: #eaeaea;*/
+	background: #eaeaea;
 	left: 300px;
 	width: auto
 }
 
 .mid-col.show {
-	background: 0 0;
+	background: none;
 	opacity: .9
 }
 
@@ -883,8 +807,7 @@ body {
 }
 
 .left-col {
-	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-	url(IMG_20210116_093154.jpg);
+	background-image: url("IMG_20210116_093154.jpg");
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -894,7 +817,7 @@ body {
 }
 
 .left-col .overlay {
-	background-image: url(IMG_20210116_093154.jpg);
+	background-image: url("IMG_20210116_093154.jpg");
 	width: 100%;
 	height: 180px;
 	position: absolute
@@ -914,7 +837,7 @@ body {
 }
 
 .left-col #header a {
-	color: #696969
+	color: #FFFAFA
 }
 
 .left-col #header a:hover {
@@ -923,7 +846,7 @@ body {
 
 .left-col #header .header-subtitle {
 	text-align: center;
-	color: #000000;
+	color: #999;
 	font-size: 14px;
 	line-height: 25px;
 	overflow: hidden;
@@ -934,8 +857,8 @@ body {
 }
 
 .left-col #header .header-menu {
-	font-weight: 200;
-	line-height: 25px;
+	font-weight: 300;
+	line-height: 31px;
 	text-transform: uppercase;
 	float: none;
 	min-height: 150px;
@@ -1047,29 +970,29 @@ body {
 ::-webkit-scrollbar-button:start {
 	width: 10px;
 	height: 10px;
-	background: url(img/scrollbar_arrow.png) no-repeat 0 0
+	background: url(./img/scrollbar_arrow.png) no-repeat 0 0
 }
 
 ::-webkit-scrollbar-button:start:hover {
-	background: url(img/scrollbar_arrow.png) no-repeat -15px 0
+	background: url(./img/scrollbar_arrow.png) no-repeat -15px 0
 }
 
 ::-webkit-scrollbar-button:start:active {
-	background: url(img/scrollbar_arrow.png) no-repeat -30px 0
+	background: url(./img/scrollbar_arrow.png) no-repeat -30px 0
 }
 
 ::-webkit-scrollbar-button:end {
 	width: 10px;
 	height: 10px;
-	background: url(img/scrollbar_arrow.png) no-repeat 0 -18px
+	background: url(./img/scrollbar_arrow.png) no-repeat 0 -18px
 }
 
 ::-webkit-scrollbar-button:end:hover {
-	background: url(img/scrollbar_arrow.png) no-repeat -15px -18px
+	background: url(./img/scrollbar_arrow.png) no-repeat -15px -18px
 }
 
 ::-webkit-scrollbar-button:end:active {
-	background: url(img/scrollbar_arrow.png) no-repeat -30px -18px
+	background: url(./img/scrollbar_arrow.png) no-repeat -30px -18px
 }
 
 .article-entry .highlight,.article-entry pre {
@@ -1097,7 +1020,7 @@ body {
 }
 
 .article-entry pre code {
-	background: 0 0;
+	background: none;
 	text-shadow: none;
 	padding: 0;
 	color: #fff
@@ -1172,12 +1095,12 @@ body {
 }
 
 .article-entry .gist .gist-file .gist-data {
-	background: 0 0;
+	background: none;
 	border: none
 }
 
 .article-entry .gist .gist-file .gist-data .line-numbers {
-	background: 0 0;
+	background: none;
 	border: none;
 	padding: 0 20px 0 0
 }
@@ -1455,7 +1378,9 @@ pre .css~* .id,pre .id {
 	display: -moz-inline-stack;
 	display: inline-block;
 	vertical-align: middle;
+	*vertical-align: auto;
 	zoom: 1;
+	*display: inline;
 	margin: 0 8px 15px;
 	transition: .3s;
 	text-align: center;
@@ -1765,7 +1690,7 @@ pre .css~* .id,pre .id {
 	float: right;
 	margin-top: -10px;
 	color: #555;
-	background: 0 0;
+	background: none;
 	text-align: right;
 	width: auto
 }
@@ -1866,7 +1791,7 @@ pre .css~* .id,pre .id {
 .tools-col .tools-section .search-wrap .search-ipt {
 	width: 310px;
 	color: #fff;
-	background: 0 0;
+	background: none;
 	border: none;
 	border-bottom: 2px solid #fff;
 	font-family: Roboto,serif
@@ -2408,7 +2333,7 @@ pre .css~* .id,pre .id {
 }
 
 .article-entry figure table tbody tr:hover {
-	background: 0 0
+	background: none
 }
 
 #article-nav {
@@ -2435,7 +2360,7 @@ pre .css~* .id,pre .id {
 	float: right
 }
 
-#SOHUCS,#disqus_thread,#gitment-ctn,.cloud-tie-wrapper,.duoshuo {
+#disqus_thread,#gitment-ctn,#SOHUCS,.cloud-tie-wrapper,.duoshuo {
 	padding: 0 30px!important;
 	min-height: 20px
 }
@@ -2560,6 +2485,7 @@ pre .css~* .id,pre .id {
 	height: 100%;
 	background: #000;
 	opacity: 0;
+	filter: alpha(opacity=0);
 	pointer-events: none;
 	transition: .3s ease-in-out
 }
@@ -2867,7 +2793,7 @@ pre .css~* .id,pre .id {
 	height: 2em;
 	top: 50%;
 	margin: -1em 0 0;
-	background: url(fonts/tooltip.4004ff.svg) no-repeat 50%;
+	background: url(./fonts/tooltip.4004ff.svg) no-repeat 50%;
 	background-size: 100%
 }
 
@@ -2917,7 +2843,7 @@ pre .css~* .id,pre .id {
 	text-align: center;
 	font-weight: 400;
 	color: #4d4d4d;
-	background: 0 0;
+	background: transparent;
 	opacity: 0;
 	margin: 0 0 -10px -185px;
 	cursor: default;
@@ -3207,7 +3133,7 @@ pre .css~* .id,pre .id {
 		font-size: 12px;
 		border-radius: 0;
 		color: #666;
-		background: 0 0;
+		background: none;
 		height: auto;
 		padding: 0;
 		margin: 0;
@@ -3356,7 +3282,7 @@ pre .css~* .id,pre .id {
 	}
 
 	#mobile-nav .overlay {
-		background-image: url(IMG_20210116_093154.jpg);
+		background-image: url("IMG_20210116_093154.jpg");
 		height: 110px;
 		position: absolute;
 		width: 100%;
@@ -3485,12 +3411,11 @@ pre .css~* .id,pre .id {
 		-webkit-box-orient: vertical;
 		padding: 0 24px
 	}
-}
-/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp__button {
+}/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp__button {
 	width: 44px;
 	height: 44px;
 	position: relative;
-	background: 0 0;
+	background: none;
 	cursor: pointer;
 	overflow: visible;
 	-webkit-appearance: none;
@@ -3509,7 +3434,7 @@ pre .css~* .id,pre .id {
 }
 
 .pswp__button:active {
-	outline: 0;
+	outline: none;
 	opacity: .9
 }
 
@@ -3523,7 +3448,7 @@ pre .css~* .id,pre .id {
 }
 
 .pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before {
-	background: url(img/default-skin.png) 0 0 no-repeat;
+	background: url(./img/default-skin.png) 0 0 no-repeat;
 	background-size: 264px 88px;
 	width: 44px;
 	height: 44px
@@ -3531,11 +3456,11 @@ pre .css~* .id,pre .id {
 
 @media (-webkit-min-device-pixel-ratio:1.1),(-webkit-min-device-pixel-ratio:1.09375),(min-resolution:1.1dppx),(min-resolution:105dpi) {
 	.pswp--svg .pswp__button,.pswp--svg .pswp__button--arrow--left:before,.pswp--svg .pswp__button--arrow--right:before {
-		background-image: url(fonts/default-skin.b257fa.svg)
+		background-image: url(./fonts/default-skin.b257fa.svg)
 	}
 
 	.pswp--svg .pswp__button--arrow--left,.pswp--svg .pswp__button--arrow--right {
-		background: 0 0
+		background: none
 	}
 }
 
@@ -3577,7 +3502,7 @@ pre .css~* .id,pre .id {
 }
 
 .pswp__button--arrow--left,.pswp__button--arrow--right {
-	background: 0 0;
+	background: none;
 	top: 50%;
 	margin-top: -50px;
 	width: 70px;
@@ -3796,7 +3721,7 @@ a.pswp__share--download:hover {
 }
 
 .pswp__preloader--active .pswp__preloader__icn {
-	background: url(img/preloader.gif) 0 0 no-repeat
+	background: url(./img/preloader.gif) 0 0 no-repeat
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -3814,7 +3739,7 @@ a.pswp__share--download:hover {
 }
 
 .pswp--css_animation .pswp__preloader__icn {
-	background: 0 0;
+	background: none;
 	opacity: .75;
 	width: 14px;
 	height: 14px;
@@ -3842,7 +3767,7 @@ a.pswp__share--download:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: 0 0;
+	background: none;
 	margin: 0
 }
 
@@ -3858,8 +3783,8 @@ a.pswp__share--download:hover {
 
 @-webkit-keyframes clockwise {
 	0% {
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
 	}
 
 	to {
@@ -3870,8 +3795,8 @@ a.pswp__share--download:hover {
 
 @keyframes clockwise {
 	0% {
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
 	}
 
 	to {
@@ -3964,9 +3889,8 @@ a.pswp__share--download:hover {
 }
 
 .pswp--minimal--dark .pswp__top-bar {
-	background: 0 0
-}
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp {
+	background: none
+}/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp {
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -3979,7 +3903,7 @@ a.pswp__share--download:hover {
 	z-index: 1500;
 	-webkit-text-size-adjust: 100%;
 	-webkit-backface-visibility: hidden;
-	outline: 0
+	outline: none
 }
 
 .pswp * {
