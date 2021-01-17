@@ -913,16 +913,16 @@ body {
 }
 
 .left-col #header a {
-	color: #15684
+	color: #999
 }
 
 .left-col #header a:hover {
-	color: #b0a0aa
+	color: #5628
 }
 
 .left-col #header .header-subtitle {
 	text-align: center;
-	color: #999;
+	color: #5628;
 	font-size: 14px;
 	line-height: 25px;
 	overflow: hidden;
@@ -933,8 +933,8 @@ body {
 }
 
 .left-col #header .header-menu {
-	font-weight: 300;
-	line-height: 31px;
+	font-weight: 200;
+	line-height: 25px;
 	text-transform: uppercase;
 	float: none;
 	min-height: 150px;
